@@ -1,0 +1,348 @@
+/*work page - WP template name goes here*/
+
+.blog .site-main section,
+.archive .site-main section {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 1.5rem;
+
+ }
+
+
+.sib-container--large[style] {
+  max-width: 665px !important;
+  border: 1px solid gray !important;
+}
+.sib-text-form-block, .entry__label {
+  font-family:Georgia, 'Times New Roman', Times, serif !important;
+}
+.sib-form .entry__field {
+  margin: 0.25rem 1px !important;
+  outline: 1px solid gray !important;
+  border-radius: 3px !important;
+  border: none !important;
+
+  
+}
+
+.sib-form .entry__field ::placeholder{
+  color: gray !important;
+  font-family:Georgia, 'Times New Roman', Times, serif !important;
+}
+
+.sib-form .entry__field:focus-within {
+  box-shadow: 0 0 0 0.5px #808080 inset !important;
+}
+
+
+button.sib-form-block__button[style] {
+  background-color: red !important;
+  font-weight: normal !important;
+  width: 100%;
+  padding: 1em 0;
+  text-align: center !important;
+  transition: background-color 0.5s ease-out;
+}
+
+.sib-form-block__button[style]:hover {
+  background-color: rgb(190, 8, 8) !important;
+
+}
+.sib-form-block__button-with-loader {
+  line-height: 1.2 !important;
+}
+.sib-form[style] {
+  grid-column: 1/-1;
+  background: #fff !important;
+  border-bottom: 2px solid gray;
+}
+
+.entry__label[style],
+.sib-form-block[style] {
+  text-align: center !important;
+}
+
+.entry__label[style],
+.sib-text-form-block p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: gray !important;
+}
+
+
+.entry-meta {
+  padding: 1rem 0 2rem 0;
+}
+
+.read-more {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.read-more a {
+  padding: 0.5rem 1rem;
+}
+
+
+
+  .blog article,
+  .archive article,
+  .search-results article {
+    max-width: 854px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  
+  }
+
+  .wp-block-embed iframe {
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio: 16 / 9;
+  }
+
+
+
+
+/*start has-sidebar single post layout*/
+
+.single-post .page-title,
+.single-post .entry-header h1 {
+  // text-align: left;
+  // padding: 2rem 0;
+  border-bottom: 2px solid gray;
+}
+
+.single-post .entry-header h1 {
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.single-post aside {
+  font-size: 1.2rem;
+  padding: 3.5rem 0 1rem 0;
+}
+
+
+.single-post aside ul {
+  list-style-type: none;
+  padding: 0 0 0 0.5rem;
+  margin: 0;
+
+}
+
+
+
+.widget_recent_entries h2 {
+  text-align: right;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid green;
+
+}
+
+.widget_categories h2 {
+  text-align: right;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid gold;
+
+}
+
+.widget_block h2 {
+  text-align: right;
+  border-bottom: 2px solid red;
+
+}
+
+h2.widget_archives {
+  text-align: right;
+  border-bottom: 2px solid green;
+}
+
+.single-post aside .widget_categories {
+  margin: 2rem 0 2rem 0;
+}
+
+.single-post aside .widget_categories ul,
+.single-post aside .widget_block ul,
+.single-post aside .wp-block-tag-cloud  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  grid-gap: 15px;
+  //  outline: 2px dashed blue;
+}
+
+
+.single-post aside .widget_categories li,
+.single-post  aside .widget_block li,
+.tag-cloud-link {
+  border-bottom: 1px solid gray;
+}
+
+.single-post .nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem
+  
+}
+
+
+
+.single-post article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $size__max-width;
+  margin: 0 auto;
+}
+
+.single-post .entry-header,
+.single-post .post-navigation {
+     flex: 1 0 100%;
+
+  }
+
+
+  .single-post .entry-content {
+    font-size: 1.2rem;
+    width: $size__ratio-large;
+    // outline: 2px dashed chartreuse;
+  }
+
+
+  .single-post aside {
+    width: $size__ratio-small;
+    // outline: 2px dashed rebeccapurple; 
+  }
+
+
+
+
+.single-post .post-navigation {
+  font-size: 1.2rem;
+  padding: 5px 0;
+  border-top: 2px solid gray;
+}
+
+ /*truncate post titles in recent posts widget*/
+.widget_recent_entries li {
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 1px solid gray;
+  text-overflow: ellipsis;
+  margin: 0 0 1rem 0;
+  // outline: 1px dashed darkgreen;
+}
+
+ /*drop post titles on next line in mobile view to accomodate longer
+ post titles and use text-overflow: ellipsis for longer titles*/
+
+  @media screen and (max-width: 1000px) {
+
+    .single-post .nav-links{
+      display: block;
+    }
+    
+
+    .single-post .nav-links a {
+      display: grid;
+    }
+
+    .single-post .nav-subtitle {
+      display: block;
+        
+    }
+    .single-post .nav-next {
+      text-align: right;
+    }
+    
+    .single-post .nav-previous .nav-title,
+    .single-post .nav-next .nav-title {
+      
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+           
+    }
+    
+    .single-post .nav-previous .nav-title {
+      content: '';
+      padding-bottom: 1rem;
+      border-bottom: 2px solid grey;
+     
+    }
+
+    
+    .single-post .nav-previous:last-child .nav-title {
+      padding-bottom: 0;
+      border-bottom: none;
+   }
+
+
+
+    .single-post .nav-previous .nav-subtitle::before {
+     content: "\AB";  
+     }
+    
+    .single-post .nav-next .nav-subtitle::after {
+      content: "\BB";  
+      }
+    
+    }
+
+
+
+@media screen and (max-width: 1080px) {
+  .single-post .entry-header h1,
+  .single-post .entry-meta  {
+    text-align: center;
+  }
+ .single-post .contain {
+    flex-flow: column wrap;
+    
+    
+  }
+  .single-post .entry-content  {
+    width: 100%;
+    padding: 0 0 1rem 0;   
+}
+
+
+  .single-post .entry-content p {
+    padding: 0 7px;
+  }
+
+
+.single-post aside {
+    display: none;
+   }
+ 
+
+}
+
+.category aside,
+.archive aside  {
+  display: none;
+ }
+
+
+@media screen and (max-width: 1800px) {
+  .blog .site-main section,
+  .archive .site-main section {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (min-width: 1001px) {
+  .single-post .nav-previous .nav-subtitle::after {
+    content: "\003A";  
+    margin-right: 0.5rem;
+    }
+   
+    .single-post .nav-next .nav-subtitle::after {
+     content: "\003A";  
+     margin-right: 0.5rem;
+    }
+}

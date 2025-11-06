@@ -1,0 +1,126 @@
+/*about page - page.php, content-page.php*/
+
+.home .entry-content {
+  display: flex;
+  font-size: 1.3rem;
+  column-gap: 1rem;
+  max-width: 1680px;
+  margin: auto;
+  
+  }
+ 
+  
+.home .inner-1 { 
+    flex: 1.5 0 0;
+    padding-right: 1rem;
+    border-right: 2px solid gray;
+  }
+
+.home .inner-1 figure {
+  float: left;
+  max-width: 520px;
+  min-width: 200px;
+  margin: 0.5rem 1rem 0.5rem 0;
+  
+}
+
+.home .inner-1 .wp-image-62 {
+  width: 100%;
+  max-width: none;
+  border-radius:10px;
+}
+
+.home .inner-2 {
+  flex: 1 0 0;
+}
+
+
+.drop-cap::first-letter{
+  float: left;
+  font-size: 9em;
+  font-weight: bold;
+  vertical-align: top;
+  line-height: 0.69;
+  color: red;
+  margin-right: 2rem;
+  
+ }
+
+
+
+ @media screen and (max-width: 1450px) {
+  .home .entry-content {
+    display: block;
+    font-size: 1.2rem;
+   
+  }
+
+  .drop-cap::first-letter {
+    font-size: 7.5em;
+    line-height: 0.80;
+  }
+  .home .entry-content figure {
+    max-width: none;
+    min-width: 0;
+    float: right;
+    width: 340px;
+    padding: 0;
+    margin: 0 0 0.5rem 1rem;
+    
+  }
+
+  .home .inner-1 { 
+    padding: 1em 0;
+    border-right: none;
+    border-bottom: 2px solid gray;
+  }
+
+  .home .inner-1 div,
+  .home .inner-2 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .home .entry-content figure {
+    float: left;
+    padding: 0;
+    margin: 0 1rem 0.5rem 0;
+    
+  }
+
+  .drop-cap::first-letter {
+    font-size: 7.5em;
+    line-height: 0.80;
+    margin: 0 1.3rem 0 0;
+    padding: 0;
+  }
+
+  .home .inner-1 div,
+  .home .inner-2 {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home .entry-content figure {
+    float: none;
+    margin: auto;
+    padding:0 5px;
+  }
+}
+
+
+@media (max-width: 420px) {
+ 
+  .home .inner-1 figure .wp-image-62{
+    margin:0 0 1rem 0;
+  }
+
+}
+
+@media (max-width: 340px) {
+.home .entry-content figure {
+  width: 310px;
+}
+}

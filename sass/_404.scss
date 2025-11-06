@@ -1,0 +1,137 @@
+
+/*SMACSS - start 404 error page - 404.php
+*This theme has no searchform.php template so below classes are from default search form. 
+*See https://developer.wordpress.org/reference/functions/get_search_form/
+*
+*class names can be changed via wp-includes/general-template.php when determined if it's a module or layout classes
+*
+*/
+.search-constrain {
+  max-width: 665px;
+  line-height: 1.2;
+  padding: 17px;
+  margin: 2.5rem auto;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form label {
+  background: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.search-field {
+  width: 100%;
+  height: calc(2.5rem - 2px);
+  font: inherit;
+  border: none;
+  outline: 1px solid gray;
+  border-radius: 3px;
+  padding: 0 0.5rem;
+
+}
+
+
+.search-field:focus-within {
+  box-shadow: 0 0 0 0.5px #808080 inset !important;
+}
+
+
+.search-submit {
+  font-size: 16px;
+  border-radius: 3px;
+  border-width: 0;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+ }
+
+
+ .search-submit:hover {
+  background-color: rgb(190, 8, 8);
+ }
+
+
+
+.page-title {
+    margin: 0 0 1.7rem 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.error-404 {
+    max-width: 854px;
+    margin: 0 auto;
+}
+
+.error-404 .constrain {
+    display: flex;
+    gap: 2rem;
+    // outline: 2px dashed cornflowerblue;
+}
+.error-404 .widget_recent_entries,
+.error-404 .widget_categories  {
+    flex: 1 1 0;
+    // outline: 1px solid blueviolet;
+}
+.error-404 .constrain li{
+font-size: 1.2rem;
+text-align: center;
+}
+.error-404 .widget ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.error-404 .widgettitle,
+.error-404 .widget-title{
+  text-align: center;
+
+}
+
+.error-404 .widget_categories li {
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    text-overflow: ellipsis;
+    margin: 0 0 1rem 0;
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+  // .error-404 .widget_recent_entries li:nth-last-child(1),
+  // .error-404 .widget_categories li:nth-last-child(1) {
+  //   border-bottom: none;
+  // }
+  .error-404 .widget ul {
+    margin-bottom: 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+    .error-404 .constrain {
+      flex-flow: column;  
+      
+    }
+    .error-404 .widget_recent_entries ul {
+      margin-bottom: 0;
+    }
+
+  }
+
+  
+

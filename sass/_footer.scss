@@ -1,0 +1,149 @@
+/*site footer - footer.php */
+
+.site-footer {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns:1fr 1fr 1fr;
+  padding: 1.5rem 0;
+}
+
+.site-footer > *{
+  display: flex;
+  text-transform: uppercase;
+  
+}
+
+.site-footer div:first-child {
+
+justify-self: left;
+}
+
+.site-footer .widget_categories{
+  justify-self: center;
+
+
+}
+
+.site-footer div:last-child {
+ 
+  justify-self: right;
+  }
+
+
+.wp-block-page-list li:nth-child(1),
+.wp-block-categories .cat-item-7 {
+  border-bottom: 2px solid green;
+}
+
+.wp-block-page-list li:nth-child(2),
+.cat-item-5 {
+  border-bottom: 2px solid gold;
+}
+
+.wp-block-page-list li:nth-child(3),
+.cat-item-6 {
+  border-bottom: 2px solid red;
+}
+
+.wp-block-page-list li:nth-child(4),
+.cat-item-1 {
+  border-bottom: 2px solid green;
+}
+
+
+.wp-block-page-list,
+.wp-block-categories-list,
+.wp-block-social-links {
+  display: flex;
+  align-items: center;
+  width: auto;
+  list-style-type: none;
+  color: gray;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+.wp-block-social-links .wp-social-link a {
+  padding: 0.38em;
+}
+
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-facebook {
+  
+  background-color: gray;
+  color: white;
+ 
+}
+
+
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram {
+  
+  background-color: gray;
+  color: white;
+
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-vimeo {
+  background-color: gray;
+ 
+  color: #fff;
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-youtube {
+  background-color: gray;
+  color: #fff;
+}
+
+@media screen and (max-width: 1450px) {
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+       
+  }
+
+
+  .wp-block-page-list,
+  .wp-block-categories-list,
+  .wp-block-social-links{
+    gap: 1.2rem;
+  } 
+
+  
+}
+
+
+@media screen and (max-width: 1000px) {
+  .site-footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 2.5rem;
+    row-gap: 1.2rem;
+  }
+ 
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+ 
+  
+  }
+
+
+  
+}
+
+@media screen and (max-width: 380px) {
+  .site-footer .wp-block-page-list,
+  .site-footer .wp-block-categories-list{
+    font-size: 0.85rem;
+  }
+
+}

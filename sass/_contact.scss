@@ -1,0 +1,107 @@
+/*contact page - WP template name goes here*/
+
+.wpcf7 {
+  max-width: 960px;
+  margin: auto;
+}
+
+.wpcf7-form  h1  {
+  line-height: 1.35;
+  margin: 3rem 0 3.5rem 0;
+}
+
+.wpcf7-form p:nth-child(3),
+.wpcf7-form p:nth-child(4),
+.wpcf7-form p:nth-child(5) {
+  margin: 1.5rem 1.5px;
+} 
+
+.wpcf7-form p:nth-child(6) {
+  margin: 0.5rem 0;
+} 
+
+
+.wpcf7-form input[type="text"], 
+.wpcf7-form input[type="email"] {
+  height: 2.5rem;
+  padding: 5px 0;
+  
+} 
+
+
+.wpcf7-form input[type="text"], 
+.wpcf7-form input[type="email"], 
+.wpcf7-form textarea {
+  color: black;
+  width: 100%;
+  outline: 1px solid gray !important;
+  border-radius: 3px !important;
+  border: none !important;
+  padding: 2.5px 5px;
+  font-size: 1em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+.wpcf7-textarea {
+   width: 100%;
+   resize: none;
+}
+
+.wpcf7-form .button {
+  background-color: red;
+  border: 0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 20px 40px;
+  transition: background-color 0.5s ease-out;
+  
+}
+.wpcf7-form .button:hover {
+  cursor: pointer;
+  box-shadow: 0px 7px 16px -7px rgba(0, 0, 0, 0.4);
+  border: 0;
+  background-color: rgb(190, 8, 8);
+}
+
+.wpcf7-spinner {
+  display: block;
+  margin: 0 auto;
+}
+
+div.wpcf7-mail-sent-ok,
+.wpcf7 form.sent .wpcf7-response-output  {
+  max-width: 960px;
+  margin: 0;
+  text-align: center;
+  border-color: green;
+}
+
+div.wpcf7-acceptance-missing,
+div.wpcf7-validation-errors {
+ 
+  border-color: red;
+  padding: 1rem;
+}
+
+span.wpcf7-not-valid-tip {
+  color: red;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+
+  max-width: 960px;
+  margin: 0;
+  text-align: center;
+  border-color: red;
+  
+}
+
+

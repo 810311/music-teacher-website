@@ -1,0 +1,54 @@
+/* site layout*/
+body {
+  // height: 100%;
+  margin: 0 7.5px;
+}
+
+.site {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home .entry-content,
+.page .entry-content {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.site-main {
+  grid-column: 1/-1;
+  // border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.entry-header h1,
+.page-title {
+  text-align: right;
+  color: gray;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0;
+  
+  
+}
+
+
+
+@media screen and (max-width: 340px) {
+  .site-main {
+    display: block;
+  }
+}
+ 
+
+@media (max-width: 1400px) {
+  .home h1.entry-title,
+  .services h1.entry-title,
+  .page-title {
+   display: none;
+  }
+
+  .site {
+    border: none;
+  }
+}

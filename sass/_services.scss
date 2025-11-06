@@ -1,0 +1,110 @@
+/*services page - WP template name goes here*/
+
+
+.services .entry-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 2.5rem;
+  font-size: 1.3rem;
+  position: relative; 
+  max-width:1680px;
+  margin:auto;
+  border-top:none;
+ 
+}
+
+.services .entry-header{
+  border-bottom:2px solid gray;
+  }
+
+.services .entry-content:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  top: 1rem;
+  left: calc(50% - 1px);
+  bottom: 1rem;
+  background: gray;
+
+}
+
+
+.services article {
+  padding-bottom: 1.5rem;
+}
+.services article p {
+  padding: 0 1rem;
+}
+
+.services article p,
+.services article ul {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+} 
+
+
+
+.services article:nth-child(1){
+  order: 1;
+ 
+  
+} 
+
+.services article:nth-child(2){
+  order: 3;
+  
+} 
+
+.services article:nth-child(3){
+  order: 5;
+ 
+} 
+
+
+.services  article:nth-child(4){
+  order: 7;
+  
+} 
+
+.services article:nth-child(5){
+  order: 2;
+  
+} 
+
+.services article:nth-child(6){
+  order: 4;
+
+} 
+
+.services article:nth-child(7){
+  order: 6;
+} 
+
+.services article:nth-child(8){
+  order: 8;
+  
+} 
+
+
+.services article:nth-child(5) h1,
+.services article:nth-child(5) h2 {
+   margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .services .entry-content   {
+      grid-template-columns: 1fr;
+    }
+      .services .entry-content > article {
+        order: initial !important; /* override nth-child*/
+        font-size: 1.2rem; 
+     }
+
+     .services .entry-content:after{
+      display: none;
+     }
+}

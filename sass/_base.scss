@@ -1,0 +1,115 @@
+
+/*base styles - default styling for how elements should look in all occurrences on the page.*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ margin: 5px;
+}
+
+.site-main{
+  line-height: 1.7;
+}
+
+.site-main > header {
+  border-bottom: 2px solid gray;
+}
+
+
+h1, h2, h3, h4 {
+  color: gray;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+/*links*/
+
+a { 
+  text-decoration: none;
+  color: gray;
+}
+
+.posted-on a,
+.author.vcard a {
+  text-decoration: underline;
+}
+
+
+/*single post*/
+
+.single-post aside li a,
+.wp-block-tag-cloud a,
+.single-post .nav-links a,
+.posted-on a,
+.author.vcard a,
+.widget a {
+  color: black;
+}
+
+.category-digital .entry-title,
+.services .entry-content article:nth-child(1) h1,
+.services .entry-content article:nth-child(3),
+.services .entry-content article:nth-child(6) {
+   border-bottom: 2.5px solid green;
+}
+
+.category-demos .entry-title,
+.category-vocal .entry-title,
+.services .entry-content article:nth-child(1),
+.services .entry-content article:nth-child(5) h1,
+.services .entry-content article:nth-child(7)     {
+   border-bottom: 2.5px solid gold;
+}
+
+.category-sound .entry-title,
+.services .entry-content article:nth-child(2),
+.services .entry-content article:nth-child(5) {
+  border-bottom: 2.5px solid red;
+}
+
+
+.read-more a,
+ aside li,
+ .widget li,
+.wp-block-tag-cloud a,
+.posted-on a,
+.author.vcard a,
+.nav-previous,
+.nav-next,
+.site-footer li {
+ 
+  transition: all .2s;
+}
+
+.read-more a:hover,
+ aside li:hover,
+.widget li:hover,
+.wp-block-tag-cloud a:hover,
+.posted-on a:hover,
+.author.vcard a:hover,
+.nav-previous:hover,
+.nav-next:hover,
+.site-footer li:hover  {
+  background-color: lightgray
+  
+}
